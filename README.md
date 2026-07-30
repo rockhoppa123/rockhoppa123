@@ -5,16 +5,18 @@
 BCom Business Analytics student (Stellenbosch University) building real infrastructure alongside the
 degree: a self-hosted homelab, an MCP-integrated animation engine, AI agents for finance research.
 
-- 🛠️ Currently building [**Mascot Forge**](https://github.com/rockhoppa123/mascot-forge) — turns a
-  layered SVG export into a data-reactive web component, agent-rigged via MCP. Zero runtime
-  dependencies, security-audited, gated CI. (The mascot on the right is one of its own outputs —
-  it's really animating, not a still image.)
+*I'd rather ship less and be sure it's right.*
+
+- 🛠️ [**Mascot Forge**](https://github.com/rockhoppa123/mascot-forge)
+  [![CI](https://github.com/rockhoppa123/mascot-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/rockhoppa123/mascot-forge/actions/workflows/ci.yml)
+  — turns a layered SVG export into a data-reactive web component, agent-rigged via MCP. Zero
+  runtime dependencies. (The mascot on the right is one of its own outputs — it's really animating.)
 - 💰 Prototyping AI agent workflows for finance research — local-first, paper-trading only, no live
   execution by design.
 - 🏠 Running a self-hosted homelab (Proxmox, Pi-hole).
 - 🎓 Business Analytics @ Stellenbosch, 3rd year.
 
-**Stack:** JavaScript/Node · React · R · SQL · PowerShell
+![Skills](https://skillicons.dev/icons?i=js,react,nodejs,r,mysql,powershell)
 
 <br clear="right">
 
