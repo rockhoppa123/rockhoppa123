@@ -3,8 +3,8 @@
   <style>
 #mascot { overflow: visible; color-scheme: light; shape-rendering: geometricPrecision; }
     .part { transform-box: fill-box; }
-    #part-body { transform-origin: 50% 62%; animation: mf-breathe 1800ms ease-in-out infinite; }
-    #part-eyes { transform-origin: 50% 50%; animation: mf-blink 4200ms step-end infinite; }
+    #part-body { transform-origin: 50% 62%; animation: mf-breathe 2400ms ease-in-out infinite; }
+    #part-eyes { transform-origin: 50% 50%; animation: mf-blink 5200ms step-end infinite; }
     @keyframes mf-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(.985, 1.035); } }
     @keyframes mf-blink { 0%, 92%, 100% { transform: scaleY(1); } 94%, 96% { transform: scaleY(.12); } }
     @media (prefers-reduced-motion: reduce) { .part { animation: none !important; } }
