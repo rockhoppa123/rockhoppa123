@@ -1,0 +1,39 @@
+name: mascot-pulse
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-mascot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run tests
+        run: node --test tests/
+
+      - name: Compute and apply today's tier
+        run: node scripts/update-mascot.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit mascot.svg if changed
+        run: |
+          if git diff --quiet -- mascot.svg; then
+            echo "no change"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add mascot.svg
+            git commit -m "mascot-pulse: sync animation to recent activity"
+            git push
+          fi
