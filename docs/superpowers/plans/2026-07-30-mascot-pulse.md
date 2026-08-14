@@ -154,7 +154,7 @@ Add to the bottom of `scripts/update-mascot.mjs`:
 import { readFileSync, writeFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 
-const USERNAME = 'rockhoppa123';
+const USERNAME = 'andrewlawsonza';
 const SVG_PATH = new URL('../mascot.svg', import.meta.url);
 
 async function fetchRecentEvents(username, token) {
@@ -302,7 +302,7 @@ After push, open the repo's Actions tab, select "mascot-pulse", click "Run workf
 1. The run's "Run tests" step passes (6/6).
 2. The run's "Compute and apply today's tier" step logs a `commits(48h)=... tier=...` line.
 3. If the tier differs from what's committed, a new commit appears on the branch with only `mascot.svg` changed, message `mascot-pulse: sync animation to recent activity`.
-4. Visit `https://github.com/rockhoppa123` (profile Overview) and confirm the mascot still renders and animates (breathe + blink loop visibly running).
+4. Visit `https://github.com/andrewlawsonza` (profile Overview) and confirm the mascot still renders and animates (breathe + blink loop visibly running).
 
 ---
 

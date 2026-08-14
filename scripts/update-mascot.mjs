@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 
-const USERNAME = 'rockhoppa123';
+const USERNAME = 'andrewlawsonza';
 const SVG_PATH = new URL('../mascot.svg', import.meta.url);
 
 export function computeTier(commitCount) {

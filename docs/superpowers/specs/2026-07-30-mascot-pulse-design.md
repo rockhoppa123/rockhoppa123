@@ -18,7 +18,7 @@ profile directly to the one product that's actually shipped.
 ```
 cron (daily, 06:00 UTC) ──▶ .github/workflows/mascot-pulse.yml
                               └─▶ node scripts/update-mascot.mjs
-                                    1. GET api.github.com/users/rockhoppa123/events/public
+                                    1. GET api.github.com/users/andrewlawsonza/events/public
                                     2. count commits (PushEvent) in last 48h
                                     3. map count → tier → {breathe-ms, blink-ms}
                                     4. regex-replace those two durations in mascot.svg's <style>
@@ -45,7 +45,7 @@ applied to itself).
 
 ## Data flow / tiers
 
-Source: `GET /users/rockhoppa123/events/public`, sum of commits across
+Source: `GET /users/andrewlawsonza/events/public`, sum of commits across
 `PushEvent` entries with `created_at` within the last 48h.
 
 | commits (48h) | tier   | breathe | blink  |
